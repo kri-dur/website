@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link href="index.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body onload="typing()" onload="slideshow()"></body>
+    <!-- Theme Color for Safari Tab Blending-->
+    <meta name="theme-color" content="tan">
+    
+    <!-- Top Menu Bar -->
+    <div id="header"><center>
+      <button type="button" onclick = "window.location.href='projects.html';"><span>PROJECTS</span></button>
+      <button type="button" onclick = "window.location.href='aboutme.html';"><span>ABOUT</span></button>
+      <button type="button"  onclick = "window.location.href='homepage.html';" id = "home">KD</button>
+      <button type="button" onclick = "window.location.href= 'mailto:kdurgavarjhula44@gmail.com'"><span>EM@IL</span></button>
+      <button type="button"  id = "linkedin" onclick = "window.open('https://www.linkedin.com/in/krishna-durgavarjhula-a3b0522a1/')"><span>LINKEDIN</span></button>
+    </div></center>
+
+    <!-- Page Content -->
+    <!-- Introduction -->
+    <div class = "container">
+      <br><center><img src="Images/profile.jpeg" id="pic"><br>
+      <p1 id = "greet">Hi. I'm Krishna Durgavarjhula.</p1><br>
+      </center>
+    </div>
+
+    <!-- About Me -->
+    <div class = "container" id = "about" style="min-height:50px; max-height:400px;"><center>
+      <span><p2 id = "descript" class = "descript"></p2></span>
+    </div></center>
+
+    <!-- Projects Slideshow -->
+    <div class="container" id = "pictures">
+      <div style="text-align:center">
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+        <span class="dot"></span> 
+      </div>
+      <!-- LiftnShift -->
+      <div class="mySlides fade" style="text-align:center;">
+        <center><div class="numbertext">Web Developer - LiftnShift Foundation(2023-Present)</div></center>
+        <img src="Images/LiftnShift.jpg" style="width:100%;" class="projects" id = "h1" onclick="window.location.href='projects.html#LiftnShift'">
+      </div>
+      <!-- MIT Beaverworks -->
+      <div class="mySlides fade" style="text-align:center;">
+        <center><div class="numbertext"> 648 Tech Beavers - MIT Beaverworks(2023-2024)</div></center>
+        <img src="Images/Beaverworks.png" style="width:100%;" class="projects" id = "h2" onclick="window.location.href='projects.html#Beaverworks'">
+      </div>
+      <!-- Springboard Fundamentals of Engineering at Berkeley -->
+
+      <!-- BlueStamp -->
+      <div class="mySlides fade">
+        <center><div class="numbertext">BlueStamp Engineering(2022)</div></center>
+        <img src="Images/BlueStamp.png" style="width:100%;" class="projects" id = "h3" onclick="window.location.href='projects.html#BlueStamp'">
+      </div>
+      <!-- FutureCity -->
+      <div class="mySlides fade">
+        <center><div class="numbertext">FutureCity(2021)</div></center>
+        <img src="Images/FutureCity.png" style="width:100%;" class="projects" id = "h4" onclick="window.location.href='projects.html#FutureCity'">
+      </div>
+      <!-- CS First -->
+      <div class="mySlides fade">
+        <center><div class="numbertext">Secretary - AHS Google CS First Club(2024-2025)</div></center>
+        <img src="Images/CSFirst.png" style="width:100%;" class="projects" id = "h5">
+      </div><br>
+    </div>
+
+    <!-- Skills -->
+    <div class="container" style="display:table;"><center>
+      <p1>Skills</p1><br>
+      <div class="column">
+        <p2>Python</p2><br>
+        <img src="Images/Logos/Python.webp" style="width:30%; height:auto;"><br>
+        <p2>Javascript</p2><br>
+        <img src="Images/Logos/JS.png" style="width:28%; height:auto;padding-bottom:3px;"><br>
+        <p2>Sketchup</p2><br>
+        <img src="Images/Logos/Sketchup.png" style="width:50%; height:auto;"><br>
+      </div>
+      <div class="column">
+        <p2>HTML</p2><br>
+        <img src="Images/Logos/HTML.png" style="width:30%; height:auto;"><br>
+        <p2>C++</p2><br>
+        <img src="Images/Logos/C++.png" style="width:30%; height:auto;"><br>
+        <p2>Film Production</p2><br>
+        <img src="Images/Logos/Video.png" style="width:30%; height:auto;">
+      </div>
+      <div class="column">
+        <p2>CSS</p2><br>
+        <img src="Images/Logos/CSS.png" style="width:30%; height:auto;"><br>
+        <p2>ADOBE Suite</p2><br>
+        <img src="Images/Logos/Adobe.png" style="width:30%; height:auto; padding-bottom:7px;"><br>
+        <p2>Hardware</p2><br>
+        <img src="Images/Logos/Hardware.png" style="width:30%; height:auto;"><br>
+      </div>
+    </div></center>
+
+    <!-- Resume -->
+    <div class="container"><center>
+      <p1>My Resume</p1>
+      <embed id = "resume" src = "Resume.pdf" type = "application/pdf"/>
+    </div></center>
+
+    <!-- Contacts -->
+    <div class="container">
+      <p3>Contact Me</p3><br>
+      <ul><p2>
+        <li>Email: kdurgavarjhula44@gmail.com</li>
+        <li><a href="https://www.linkedin.com/in/krishna-durgavarjhula-a3b0522a1/">Linkedin</a></li>
+        <li><a href="https://www.instagram.com/hello2084748/?igsh=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr">Instagram</a></li>
+        <li><a href="https://boxd.it/7rQl9">Letterboxd</a></li>
+      </p2></ul>
+    </div>
+    
+    <!-- JS -->
+    <script src = "index.js"></script>
+   </body>
+</html>
