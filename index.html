@@ -117,6 +117,57 @@
     </div>
     
     <!-- JS -->
-    <script src = "index.js"></script>
+    <script src = "index.js">
+      /* Smaller Browser Window Sizes */
+      @media only screen and (max-width: 1000px) and (min-width:500px) {
+        button{
+          font-size:115%;
+        }
+        p1{
+          font-size:125%;
+        }
+      }
+      /* Current Gen. Phones */
+      @media only screen and (max-width:499px) and (min-width:350px){
+        .container{
+          min-width:90vw;
+        }
+        #header{
+          padding:0px;
+          font-size:40%;
+        }
+        button{
+          margin:0px;
+        }
+        p1{
+          font-size:125%;
+        }
+        #top{
+          padding-top:5px;
+        }
+        #pic{
+          margin-top:30px;
+        }
+      }
+      /* Last Gen. Phones */
+      @media only screen and (max-width:349px){
+        .container{
+          min-width:90vw;
+        }
+        #header{
+          padding:0px;
+          font-size:30%;
+        }
+        button{
+          margin:0px;
+        }
+        p1{
+          font-size:125%;
+        }
+        #pic{
+          margin-top:10px;
+        }
+      }
+    </script>
    </body>
 </html>
