@@ -233,6 +233,9 @@ a{
 }
 /* Dark Mode Media Query */
 @media (prefers-color-scheme:dark){
+  meta{
+    theme-color:background-color:#C3AB9A;
+  }
   body{
     background-color:#1e1e1e;
     color:rgb(218, 218, 218);
