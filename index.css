@@ -182,7 +182,7 @@ a{
 
 /* Media Queries for Screen Sizes*/
 /* Smaller Browser Window Sizes */
-@media only screen and (max-width: 1000px) and (min-width:455px) {
+@media only screen and (max-width: 1000px) and (min-width:500px) {
   button{
     font-size:115%;
   }
@@ -191,14 +191,13 @@ a{
   }
 }
 /* Current Gen. Phones */
-@media only screen and (max-width:454px) and (min-width:350px){
+@media only screen and (max-width:499px) and (min-width:350px){
   .container{
     min-width:90vw;
   }
   #header{
     padding:0px;
-    margin:0px;
-    font-size:50%;
+    font-size:40%;
   }
   p1{
     font-size:125%;
@@ -217,8 +216,7 @@ a{
   }
   #header{
     padding:0px;
-    margin:0px;
-    font-size:40%;
+    font-size:30%;
   }
   p1{
     font-size:125%;
