@@ -139,6 +139,13 @@ img{
   cursor:pointer;
   scale:95%;
 }
+.albums{
+  transition: ease-in-out 0.3s;
+}
+.albums:hover{
+  cursor:pointer;
+  scale:95%;
+}
 a{
   color:rgb(89, 31, 131);
 }
