@@ -1,4 +1,4 @@
-description = "I am a rising 11th grader focused on acquiring knowledge and experience in engineering, mathematics, and graphic design to pursue a career in computer science. I'm passionate about volunteering with a strong work ethic and organizational & leadership qualities. I pursue personal projects to not only build my experience, but also help the community around me."
+description = "I am a rising 12th grader focused on acquiring knowledge and experience in engineering, mathematics, and graphic design to pursue a career in computer science. I'm passionate about volunteering with a strong work ethic and organizational & leadership qualities. I pursue personal projects to not only build my experience, but also help the community around me."
 var i = 0;
 var speed = 25;
 var script = document.createElement('script');
