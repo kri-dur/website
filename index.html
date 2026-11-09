@@ -1,176 +1,195 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Krishna Durgavarjhula | UC Berkeley Computer Science</title>
-    <meta name="description" content="Portfolio of Krishna Durgavarjhula — Computer Science student at UC Berkeley, IEEE published researcher, and software engineer." />
-    
-    <!-- Theme Color for Safari / Mobile Status Bar Blending with Tan Glass Header -->
-    <meta name="theme-color" content="tan" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#C3AB9A" media="(prefers-color-scheme: dark)" />
 
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
-    <link href="index.css" rel="stylesheet" type="text/css" />
-  </head>
-  <body>
-    <!-- Top Left-Aligned Header Bar with Symmetrical, Poppy Animations -->
-    <header id="header">
-      <div class="header-inner">
-        <!-- Left-Aligned Brand Monogram -->
-        <a href="#about" class="brand-monogram" title="Krishna Durgavarjhula">KD</a>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Krishna Durgavarjhula | UC Berkeley Computer Science</title>
+  <meta name="description"
+    content="Portfolio of Krishna Durgavarjhula — Computer Science student at UC Berkeley, IEEE published researcher, and software engineer." />
 
-        <!-- Left-Aligned Navigation Links -->
-        <nav class="nav-cluster" id="nav-cluster" aria-label="Main Navigation">
-          <button type="button" class="nav-btn" data-target="about"><span>ABOUT</span></button>
-          <button type="button" class="nav-btn" data-target="projects"><span>PROJECTS</span></button>
-          <button type="button" class="nav-btn" data-target="skills"><span>SKILLS</span></button>
-          <button type="button" class="nav-btn" data-target="experience"><span>EXPERIENCE</span></button>
-          <button type="button" class="nav-btn" data-target="resume"><span>RESUME</span></button>
-          <button type="button" class="nav-btn" data-target="contact"><span>CONTACT</span></button>
-        </nav>
+  <!-- Theme Color for Safari / Mobile Status Bar Blending with Tan Glass Header -->
+  <meta name="theme-color" content="tan" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#C3AB9A" media="(prefers-color-scheme: dark)" />
 
-        <!-- Right Header Utilities -->
-        <div class="header-actions">
-          <a href="mailto:kdurgavarjhula44@gmail.com" class="nav-btn" title="Shoot me an Email!"><span>EM@IL</span></a>
-          <a href="https://www.linkedin.com/in/krishna-durgavarjhula-a3b0522a1/" target="_blank" rel="noopener noreferrer" class="nav-btn" title="LinkedIn Profile"><span>LINKEDIN</span></a>
-          <a href="https://github.com/kri-dur" target="_blank" rel="noopener noreferrer" class="nav-btn" title="GitHub Profile"><span>GITHUB</span></a>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link href="index.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- Top Left-Aligned Header Bar with Symmetrical, Poppy Animations -->
+  <header id="header">
+    <div class="header-inner">
+      <!-- Left-Aligned Brand Monogram -->
+      <a href="#about" class="brand-monogram" title="Krishna Durgavarjhula">KD</a>
+
+      <!-- Left-Aligned Navigation Links -->
+      <nav class="nav-cluster" id="nav-cluster" aria-label="Main Navigation">
+        <button type="button" class="nav-btn" data-target="about"><span>ABOUT</span></button>
+        <button type="button" class="nav-btn" data-target="projects"><span>PROJECTS</span></button>
+        <button type="button" class="nav-btn" data-target="skills"><span>SKILLS</span></button>
+        <button type="button" class="nav-btn" data-target="experience"><span>TIMELINE</span></button>
+        <button type="button" class="nav-btn" data-target="resume"><span>RESUME</span></button>
+        <button type="button" class="nav-btn" data-target="contact"><span>CONTACT</span></button>
+      </nav>
+
+      <!-- Right Header Utilities -->
+      <div class="header-actions">
+        <a href="mailto:kdurgavarjhula44@gmail.com" class="nav-btn" title="Shoot me an Email!"><span>EM@IL</span></a>
+        <a href="https://www.linkedin.com/in/krishna-durgavarjhula-a3b0522a1/" target="_blank" rel="noopener noreferrer"
+          class="nav-btn" title="LinkedIn Profile"><span>LINKEDIN</span></a>
+        <a href="https://github.com/kri-dur" target="_blank" rel="noopener noreferrer" class="nav-btn"
+          title="GitHub Profile"><span>GITHUB</span></a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Container -->
+  <main class="main-wrapper">
+
+    <!-- About / Hero Section -->
+    <section id="about" aria-labelledby="about-heading">
+      <div class="hero-container">
+        <!-- Left-Aligned Description on Same Line -->
+        <div class="hero-content">
+          <h1 id="about-heading" class="hero-name">Hi. I'm Krishna Durgavarjhula.</h1>
+          <div class="hero-subtitle">Computer Science @ UC Berkeley | Software &amp; Embedded Systems</div>
+
+          <!-- Typewriter Bio Box with Zero Layout Shift (Pre-calculated Ghost) -->
+          <div class="typewriter-box" id="typewriter-box" title="Click to complete immediately">
+            <div class="typewriter-ghost" id="typewriter-ghost" aria-hidden="true">I'm a Computer Science student at UC
+              Berkeley with experience in full-stack web engineering, embedded systems, machine learning, and hardware
+              prototyping. I co-authored published IEEE research on assistive smart-cane navigation systems, engineered
+              production web tools at the Lift &amp; Shift Foundation, and published the Breathe mobile application on
+              Google Play. My technical work spans iterative software architecture, autonomous systems, and embedded
+              hardware development.</div>
+            <div class="typewriter-live">
+              <p class="typewriter-text" id="typewriter-text"></p>
+              <span class="typewriter-cursor" aria-hidden="true"></span>
+            </div>
+            <button type="button" class="typewriter-skip-btn" id="typewriter-skip">[skip animation]</button>
+          </div>
+        </div>
+
+        <!-- Right-Aligned Profile Picture on Desktop -->
+        <div class="hero-avatar-wrapper">
+          <img src="Images/profile.jpeg" alt="Krishna Durgavarjhula" class="hero-avatar" />
         </div>
       </div>
-    </header>
+    </section>
 
-    <!-- Main Content Container -->
-    <main class="main-wrapper">
-      
-      <!-- About / Hero Section -->
-      <section id="about" aria-labelledby="about-heading">
-        <div class="hero-container">
-          <!-- Left-Aligned Description on Same Line -->
-          <div class="hero-content">
-            <h1 id="about-heading" class="hero-name">Hi. I'm Krishna Durgavarjhula.</h1>
-            <div class="hero-subtitle">Computer Science @ UC Berkeley | Software &amp; Embedded Systems</div>
-            
-            <!-- Typewriter Bio Box with Zero Layout Shift (Pre-calculated Ghost) -->
-            <div class="typewriter-box" id="typewriter-box" title="Click to complete immediately">
-              <div class="typewriter-ghost" id="typewriter-ghost" aria-hidden="true">I'm a Computer Science student at UC Berkeley with experience in full-stack web engineering, embedded systems, machine learning, and hardware prototyping. I co-authored published IEEE research on assistive smart-cane navigation systems, engineered production web tools at the Lift &amp; Shift Foundation, and published the Breathe mobile application on Google Play. My technical work spans iterative software architecture, autonomous systems, and embedded hardware development.</div>
-              <div class="typewriter-live">
-                <p class="typewriter-text" id="typewriter-text"></p>
-                <span class="typewriter-cursor" aria-hidden="true"></span>
-              </div>
-              <button type="button" class="typewriter-skip-btn" id="typewriter-skip">[skip animation]</button>
-            </div>
+    <!-- Selected Projects Section -->
+    <section id="projects" aria-labelledby="projects-heading">
+      <div class="section-header">
+        <h2 id="projects-heading" class="section-title">Selected Projects</h2>
+      </div>
+
+      <!-- Rendered via Condensed Memoized Architecture in index.js -->
+      <div class="projects-container" id="projects-list">
+        <!-- Initial Accessible Semantic Fallback (Hydrated by index.js) -->
+        <article class="project-card" id="breathe">
+          <div class="project-media">
+            <img src="Images/breathe.png" alt="Breathe App" class="project-img" loading="lazy" />
           </div>
-
-          <!-- Right-Aligned Profile Picture on Desktop -->
-          <div class="hero-avatar-wrapper">
-            <img src="Images/profile.jpeg" alt="Krishna Durgavarjhula" class="hero-avatar" />
-          </div>
-        </div>
-      </section>
-
-      <!-- Selected Projects Section -->
-      <section id="projects" aria-labelledby="projects-heading">
-        <div class="section-header">
-          <h2 id="projects-heading" class="section-title">Selected Projects</h2>
-        </div>
-        
-        <!-- Rendered via Condensed Memoized Architecture in index.js -->
-        <div class="projects-container" id="projects-list">
-          <!-- Initial Accessible Semantic Fallback (Hydrated by index.js) -->
-          <article class="project-card" id="breathe">
-            <div class="project-media">
-              <img src="Images/breathe.png" alt="Breathe App" class="project-img" loading="lazy" />
-            </div>
-            <div class="project-info">
-              <div>
-                <h3 class="project-title">Breathe App</h3>
-                <div class="project-subtitle">Respiratory Symptom &amp; Environmental Trigger Tracker</div>
-                <ul class="project-bullets">
-                  <li>Developed an <span class="kw">Android application</span> enabling users to log respiratory symptoms and correlate them with localized environmental and weather triggers over time.</li>
-                  <li>Implemented native full-stack architecture using Node.js for backend services, <span class="kw">Firebase dynamic authentication</span> and data persistence, and Expo for iterative test automation.</li>
-                  <li>Published and actively maintained on the <span class="kw">Google Play Store</span> with responsive user analytics.</li>
-                </ul>
-              </div>
-              <div class="project-actions">
-                <a href="https://play.google.com/store/apps/details?id=com.krishna.breathe&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="btn-sharp">Google Play ↗</a>
-                <a href="https://github.com/kri-dur/breathe" target="_blank" rel="noopener noreferrer" class="btn-sharp btn-secondary">GitHub Code ↗</a>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-
-      <!-- Technical Skills Section -->
-      <section id="skills" aria-labelledby="skills-heading">
-        <div class="section-header">
-          <h2 id="skills-heading" class="section-title">Technical Skills</h2>
-          <span class="section-meta">Languages &amp; Frameworks &amp; Skills</span>
-        </div>
-        <div class="skills-grid" id="skills-grid">
-          <!-- Dynamically populated via index.js with memoized templates -->
-        </div>
-      </section>
-
-      <!-- Experience & Milestones Section -->
-      <section id="experience" aria-labelledby="experience-heading">
-        <div class="section-header">
-          <h2 id="experience-heading" class="section-title">Timeline</h2>
-        </div>
-        <div class="timeline-stream" id="timeline-stream">
-          <!-- Dynamically populated via index.js with memoized templates -->
-        </div>
-      </section>
-
-      <!-- Resume Section -->
-      <section id="resume" aria-labelledby="resume-heading">
-        <div class="section-header">
-          <h2 id="resume-heading" class="section-title">My Resume</h2>
-        </div>
-        <div class="resume-container">
-          <div class="resume-header">
+          <div class="project-info">
             <div>
-              <strong>Krishna Durgavarjhula — Academic &amp; Professional Resume</strong>
+              <h3 class="project-title">Breathe App</h3>
+              <div class="project-subtitle">Respiratory Symptom &amp; Environmental Trigger Tracker</div>
+              <ul class="project-bullets">
+                <li>Developed an <span class="kw">Android application</span> enabling users to log respiratory symptoms
+                  and correlate them with localized environmental and weather triggers over time.</li>
+                <li>Implemented native full-stack architecture using Node.js for backend services, <span
+                    class="kw">Firebase dynamic authentication</span> and data persistence, and Expo for iterative test
+                  automation.</li>
+                <li>Published and actively maintained on the <span class="kw">Google Play Store</span> with responsive
+                  user analytics.</li>
+              </ul>
             </div>
-            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
-              <a href="Resume.pdf" download="Krishna_Durgavarjhula_Resume.pdf" class="btn-sharp">Download PDF ↓</a>
-              <a href="Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-sharp btn-secondary">Open Fullscreen ↗</a>
+            <div class="project-actions">
+              <a href="https://play.google.com/store/apps/details?id=com.krishna.breathe&pcampaignid=web_share"
+                target="_blank" rel="noopener noreferrer" class="btn-sharp">Google Play ↗</a>
+              <a href="https://github.com/kri-dur/breathe" target="_blank" rel="noopener noreferrer"
+                class="btn-sharp btn-secondary">GitHub Code ↗</a>
             </div>
           </div>
-          <iframe src="Resume.pdf" class="resume-viewer-frame" title="Resume Document"></iframe>
-        </div>
-      </section>
-
-      <!-- Contact Section -->
-      <section id="contact" aria-labelledby="contact-heading">
-        <div class="section-header">
-          <h2 id="contact-heading" class="section-title">Get In Touch</h2>
-        </div>
-        <div class="contact-grid">
-          <a href="mailto:kdurgavarjhula44@gmail.com" class="contact-card">
-            <span class="contact-label">Email</span>
-            <span class="contact-value">kdurgavarjhula44@gmail.com</span>
-          </a>
-          <a href="https://www.linkedin.com/in/krishna-durgavarjhula-a3b0522a1/" target="_blank" rel="noopener noreferrer" class="contact-card">
-            <span class="contact-label">LinkedIn</span>
-            <span class="contact-value">krishna-durgavarjhula</span>
-          </a>
-          <a href="https://github.com/kri-dur" target="_blank" rel="noopener noreferrer" class="contact-card">
-            <span class="contact-label">GitHub</span>
-            <span class="contact-value">github.com/kri-dur</span>
-          </a>
-        </div>
-      </section>
-      
-    </main>
-
-    <!-- Clean, Sharp Footer -->
-    <footer>
-      <div class="footer-inner">
-        <div>&copy; 2023 Krishna Durgavarjhula.</div>
+        </article>
       </div>
-    </footer>
+    </section>
 
-    <!-- Portfolio Engine -->
-    <script src="index.js"></script>
-  </body>
+    <!-- Technical Skills Section -->
+    <section id="skills" aria-labelledby="skills-heading">
+      <div class="section-header">
+        <h2 id="skills-heading" class="section-title">Technical Skills</h2>
+        <span class="section-meta">Languages &amp; Frameworks &amp; Skills</span>
+      </div>
+      <div class="skills-grid" id="skills-grid">
+        <!-- Dynamically populated via index.js with memoized templates -->
+      </div>
+    </section>
+
+    <!-- Experience & Milestones Section -->
+    <section id="experience" aria-labelledby="experience-heading">
+      <div class="section-header">
+        <h2 id="experience-heading" class="section-title">Timeline</h2>
+      </div>
+      <div class="timeline-stream" id="timeline-stream">
+        <!-- Dynamically populated via index.js with memoized templates -->
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" aria-labelledby="resume-heading">
+      <div class="section-header">
+        <h2 id="resume-heading" class="section-title">My Resume</h2>
+      </div>
+      <div class="resume-container">
+        <div class="resume-header">
+          <div>
+            <strong>Krishna Durgavarjhula — Academic &amp; Professional Resume</strong>
+          </div>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+            <a href="Resume.pdf" download="Krishna_Durgavarjhula_Resume.pdf" class="btn-sharp">Download PDF ↓</a>
+            <a href="Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-sharp btn-secondary">Open
+              Fullscreen ↗</a>
+          </div>
+        </div>
+        <iframe src="Resume.pdf" class="resume-viewer-frame" title="Resume Document"></iframe>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" aria-labelledby="contact-heading">
+      <div class="section-header">
+        <h2 id="contact-heading" class="section-title">Some More Stuff</h2>
+      </div>
+      <div class="contact-grid">
+        <a href="mailto:kdurgavarjhula44@gmail.com" class="contact-card">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">kdurgavarjhula44@gmail.com</span>
+        </a>
+        <a href="https://www.linkedin.com/in/krishna-durgavarjhula-a3b0522a1/" target="_blank" rel="noopener noreferrer"
+          class="contact-card">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">krishna-durgavarjhula</span>
+        </a>
+        <a href="https://github.com/kri-dur" target="_blank" rel="noopener noreferrer" class="contact-card">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">github.com/kri-dur</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Clean, Sharp Footer -->
+  <footer>
+    <div class="footer-inner">
+      <div>&copy; 2023 Krishna Durgavarjhula.</div>
+    </div>
+  </footer>
+
+  <!-- Portfolio Engine -->
+  <script src="index.js"></script>
+</body>
+
 </html>
