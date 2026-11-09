@@ -311,7 +311,7 @@
   }
 
   /* ==========================================================================
-     5. MEMOIZED TYPEWRITER BIO EFFECT
+     5. MEMOIZED TYPEWRITER BIO EFFECT (ZERO LAYOUT SHIFT ARCHITECTURE)
      ========================================================================== */
 
   let typewriterTimeout = null;
@@ -320,8 +320,14 @@
 
   function initTypewriter() {
     const target = getElem("typewriter-text");
+    const ghost = getElem("typewriter-ghost");
     const skipBtn = getElem("typewriter-skip");
     if (!target) return;
+
+    // Pre-populate ghost element so height is 100% reserved without layout shift
+    if (ghost) {
+      ghost.textContent = BIO_TEXT;
+    }
 
     function finishTypewriter() {
       if (isTypingFinished) return;
@@ -361,7 +367,7 @@
   }
 
   /* ==========================================================================
-     6. SMOOTH SCROLLING & SCROLL-SPY (SYMMETRICAL ACTIVE STATES)
+     6. SMOOTH SCROLLING, MOBILE SLIDE HINT & SCROLL-SPY
      ========================================================================== */
 
   function initSmoothNavigation() {
@@ -376,20 +382,55 @@
 
         if (targetSection) {
           const headerHeight = header ? header.offsetHeight : 64;
-          const targetTop = targetSection.getBoundingClientRect().top + window.pageYOffset - headerHeight;
+          const currentScroll = window.pageYOffset || document.documentElement.scrollTop || 0;
+          const targetTop = targetSection.getBoundingClientRect().top + currentScroll - headerHeight;
 
-          window.scrollTo({
-            top: targetTop,
-            behavior: "smooth"
-          });
+          // Slide mobile menu bar to center clicked item
+          scrollNavToActive(btn);
+
+          try {
+            window.scrollTo({
+              top: targetTop,
+              behavior: "smooth"
+            });
+          } catch (err) {
+            window.scrollTo(0, targetTop);
+          }
         }
       });
     });
   }
 
   /**
+   * Automatically scroll the horizontal mobile menu bar to center the active button
+   * Displays the symmetrical popping bracket animation [ SECTION ] in full view on mobile
+   */
+  function scrollNavToActive(activeBtn) {
+    const navCluster = getElem("nav-cluster");
+    if (!navCluster || !activeBtn) return;
+
+    if (navCluster.scrollWidth > navCluster.clientWidth) {
+      const clusterWidth = navCluster.clientWidth;
+      const btnLeft = activeBtn.offsetLeft;
+      const btnWidth = activeBtn.offsetWidth;
+      // Center the active button with its symmetrical brackets in the visible menu bar
+      const targetScroll = btnLeft - (clusterWidth / 2) + (btnWidth / 2);
+
+      try {
+        navCluster.scrollTo({
+          left: Math.max(0, targetScroll),
+          behavior: "smooth"
+        });
+      } catch (e) {
+        navCluster.scrollLeft = Math.max(0, targetScroll);
+      }
+    }
+  }
+
+  /**
    * IntersectionObserver for scroll-spy highlighting
    * Snappily updates the active button so symmetrical brackets pop into view
+   * and automatically slides the mobile menu bar to center the active section
    */
   function initScrollSpy() {
     const sections = queryAll("section[id]");
@@ -409,6 +450,8 @@
           navButtons.forEach((btn) => {
             if (btn.getAttribute("data-target") === id) {
               btn.classList.add("active");
+              // Slide the mobile menu bar horizontally to showcase the active bracket animation
+              scrollNavToActive(btn);
             } else {
               btn.classList.remove("active");
             }
@@ -434,7 +477,8 @@
       () => {
         if (!ticking) {
           window.requestAnimationFrame(() => {
-            if (window.pageYOffset > 10) {
+            const currentScroll = window.pageYOffset || document.documentElement.scrollTop || 0;
+            if (currentScroll > 10) {
               header.classList.add("header-scrolled");
             } else {
               header.classList.remove("header-scrolled");

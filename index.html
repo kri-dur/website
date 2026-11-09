@@ -21,7 +21,7 @@
         <a href="#about" class="brand-monogram" title="Krishna Durgavarjhula">KD</a>
 
         <!-- Left-Aligned Navigation Links -->
-        <nav class="nav-cluster" aria-label="Main Navigation">
+        <nav class="nav-cluster" id="nav-cluster" aria-label="Main Navigation">
           <button type="button" class="nav-btn" data-target="about"><span>ABOUT</span></button>
           <button type="button" class="nav-btn" data-target="projects"><span>PROJECTS</span></button>
           <button type="button" class="nav-btn" data-target="skills"><span>SKILLS</span></button>
@@ -44,22 +44,26 @@
       
       <!-- About / Hero Section -->
       <section id="about" aria-labelledby="about-heading">
-        <div class="hero-grid">
-          <!-- Sharp, Crisp, Borderless Profile Picture -->
-          <div class="hero-avatar-wrapper">
-            <img src="Images/profile.jpeg" alt="Krishna Durgavarjhula" class="hero-avatar" />
-          </div>
-
+        <div class="hero-container">
+          <!-- Left-Aligned Description on Same Line -->
           <div class="hero-content">
             <h1 id="about-heading" class="hero-name">Hi. I'm Krishna Durgavarjhula.</h1>
             <div class="hero-subtitle">Computer Science @ UC Berkeley | Software &amp; Embedded Systems</div>
             
-            <!-- Typewriter Bio Box -->
+            <!-- Typewriter Bio Box with Zero Layout Shift (Pre-calculated Ghost) -->
             <div class="typewriter-box" id="typewriter-box" title="Click to complete immediately">
-              <p class="typewriter-text" id="typewriter-text"></p>
-              <span class="typewriter-cursor" aria-hidden="true"></span>
+              <div class="typewriter-ghost" id="typewriter-ghost" aria-hidden="true">I'm a Computer Science student at UC Berkeley with experience in full-stack web engineering, embedded systems, machine learning, and hardware prototyping. I co-authored published IEEE research on assistive smart-cane navigation systems, engineered production web tools at the Lift &amp; Shift Foundation, and published the Breathe mobile application on Google Play. My technical work spans iterative software architecture, autonomous systems, and embedded hardware development.</div>
+              <div class="typewriter-live">
+                <p class="typewriter-text" id="typewriter-text"></p>
+                <span class="typewriter-cursor" aria-hidden="true"></span>
+              </div>
               <button type="button" class="typewriter-skip-btn" id="typewriter-skip">[skip animation]</button>
             </div>
+          </div>
+
+          <!-- Right-Aligned Profile Picture on Desktop -->
+          <div class="hero-avatar-wrapper">
+            <img src="Images/profile.jpeg" alt="Krishna Durgavarjhula" class="hero-avatar" />
           </div>
         </div>
       </section>
