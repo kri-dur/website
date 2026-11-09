@@ -1,124 +1,172 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link href="index.css" rel="stylesheet" type="text/css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Krishna Durgavarjhula | UC Berkeley Computer Science</title>
+    <meta name="description" content="Portfolio of Krishna Durgavarjhula — Computer Science student at UC Berkeley, IEEE published researcher, and software engineer." />
+    
+    <!-- Theme Color for Safari / Mobile Status Bar Blending with Tan Glass Header -->
+    <meta name="theme-color" content="tan" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#C3AB9A" media="(prefers-color-scheme: dark)" />
+
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+    <link href="index.css" rel="stylesheet" type="text/css" />
   </head>
-  <body onload="typing()" onload="slideshow()"></body>
-    <!-- Theme Color for Safari Tab Blending-->
-    <meta name="theme-color" content="tan" media="(prefers-color-scheme: light)">
-    <meta name="theme-color" content="#C3AB9A" media="(prefers-color-scheme: dark)">
-    
-    <!-- Top Menu Bar -->
-    <div id="header"><center>
-      <button type="button" onclick = "window.location.href='projects.html';"><span>PROJECTS</span></button>
-      <button type="button" onclick = "window.location.href='aboutme.html';"><span>ABOUT</span></button>
-      <button type="button"  onclick = "window.location.href='index.html';" id = "home">KD</button>
-      <button type="button" onclick = "window.location.href= 'mailto:kdurgavarjhula44@gmail.com'"><span>EM@IL</span></button>
-      <button type="button"  id = "linkedin" onclick = "window.open('https://www.linkedin.com/in/krishna-durgavarjhula-a3b0522a1/')"><span>LINKEDIN</span></button>
-    </div></center>
+  <body>
+    <!-- Top Left-Aligned Header Bar with Symmetrical, Poppy Animations -->
+    <header id="header">
+      <div class="header-inner">
+        <!-- Left-Aligned Brand Monogram -->
+        <a href="#about" class="brand-monogram" title="Krishna Durgavarjhula">KD</a>
 
-    <!-- Page Content -->
-    <!-- Introduction -->
-    <div class = "container">
-      <br><center><img src="Images/profile.jpeg" id="pic"><br>
-      <p1 id = "greet">Hi. I'm Krishna Durgavarjhula.</p1><br>
-      </center>
-    </div>
+        <!-- Left-Aligned Navigation Links -->
+        <nav class="nav-cluster" aria-label="Main Navigation">
+          <button type="button" class="nav-btn" data-target="about"><span>ABOUT</span></button>
+          <button type="button" class="nav-btn" data-target="projects"><span>PROJECTS</span></button>
+          <button type="button" class="nav-btn" data-target="skills"><span>SKILLS</span></button>
+          <button type="button" class="nav-btn" data-target="experience"><span>EXPERIENCE</span></button>
+          <button type="button" class="nav-btn" data-target="resume"><span>RESUME</span></button>
+          <button type="button" class="nav-btn" data-target="contact"><span>CONTACT</span></button>
+        </nav>
 
-    <!-- About Me -->
-    <div class = "container" id = "about" style="min-height:50px; max-height:400px;"><center>
-      <span><p2 id = "descript" class = "descript"></p2></span>
-    </div></center>
+        <!-- Right Header Utilities -->
+        <div class="header-actions">
+          <a href="mailto:kdurgavarjhula44@gmail.com" class="nav-btn" title="Send Email"><span>EM@IL</span></a>
+          <a href="https://www.linkedin.com/in/krishna-durgavarjhula-a3b0522a1/" target="_blank" rel="noopener noreferrer" class="nav-btn" title="LinkedIn Profile"><span>LINKEDIN</span></a>
+          <a href="https://github.com/kri-dur" target="_blank" rel="noopener noreferrer" class="nav-btn" title="GitHub Profile"><span>GITHUB</span></a>
+        </div>
+      </div>
+    </header>
 
-    <!-- Projects Slideshow -->
-    <div class="container" id = "pictures">
-      <div style="text-align:center">
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-        <span class="dot"></span> 
-      </div>
-      <!-- LiftnShift -->
-      <div class="mySlides fade" style="text-align:center;">
-        <center><div class="numbertext">Web Developer - LiftnShift Foundation(2023-Present)</div></center>
-        <img src="Images/LiftnShift.jpg" style="width:100%;" class="projects" id = "h1" onclick="window.location.href='projects.html#LiftnShift'">
-      </div>
-      <!-- CSEF -->
-      <div class="mySlides fade" style="text-align:center;">
-        <center><div class="numbertext"> Smart Cane System - ACSEF/CSEF(2024-2025)</div></center>
-        <img src="Images/CSEF.jpg" style="width:100%;" class="projects" id = "h2" onclick="window.location.href='projects.html#Beaverworks'">
-      </div>
+    <!-- Main Content Container -->
+    <main class="main-wrapper">
+      
+      <!-- About / Hero Section -->
+      <section id="about" aria-labelledby="about-heading">
+        <div class="hero-grid">
+          <!-- Sharp, Crisp, Borderless Profile Picture -->
+          <div class="hero-avatar-wrapper">
+            <img src="Images/profile.jpeg" alt="Krishna Durgavarjhula" class="hero-avatar" />
+          </div>
 
-      <!-- BlueStamp -->
-      <div class="mySlides fade">
-        <center><div class="numbertext">BlueStamp Engineering(2022)</div></center>
-        <img src="Images/BlueStamp.png" style="width:100%;" class="projects" id = "h3" onclick="window.location.href='projects.html#BlueStamp'">
-      </div>
-      <!-- FutureCity -->
-      <div class="mySlides fade">
-        <center><div class="numbertext">FutureCity(2021)</div></center>
-        <img src="Images/FutureCity.png" style="width:100%;" class="projects" id = "h4" onclick="window.location.href='projects.html#FutureCity'">
-      </div>
-      <!-- CS First -->
-      <div class="mySlides fade">
-        <center><div class="numbertext">Secretary - AHS Google CS First Club(2024-2025)</div></center>
-        <img src="Images/CSFirst.png" style="width:100%; cursor:none;" class="projects" id = "h5">
-      </div><br>
-    </div>
+          <div class="hero-content">
+            <h1 id="about-heading" class="hero-name">Hi. I'm Krishna Durgavarjhula.</h1>
+            <div class="hero-subtitle">Computer Science @ UC Berkeley | Software &amp; Embedded Systems</div>
+            
+            <!-- Typewriter Bio Box -->
+            <div class="typewriter-box" id="typewriter-box" title="Click to complete immediately">
+              <p class="typewriter-text" id="typewriter-text"></p>
+              <span class="typewriter-cursor" aria-hidden="true"></span>
+              <button type="button" class="typewriter-skip-btn" id="typewriter-skip">[skip animation]</button>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <!-- Skills -->
-    <div class="container">
-    <table style="max-width:50vw;"><center>
-      <p1>Skills</p1><br>
-      <div class="column">
-        <p2>Java</p2><br>
-        <img src="Images/Logos/Java.png" style="width:50px; height:55px;"><br>
-        <p2>Python</p2><br>
-        <img src="Images/Logos/Python.webp" style="width:50px; height:55px;"><br>
-        <p2>Javascript</p2><br>
-        <img src="Images/Logos/JS.png" style="width:50px; height:55px;padding-bottom:3px;"><br>
-      </div>
-      <div class="column">
-        <p2>HTML</p2><br>
-        <img src="Images/Logos/HTML.png" style="width:50px; height:55px;"><br>
-        <p2>C++</p2><br>
-        <img src="Images/Logos/C++.png" style="width:50px; height:55px;"><br>
-        <p2>Film Production</p2><br>
-        <img src="Images/Logos/Video.png" style="width:50px; height:55px;">
-      </div>
-      <div class="column">
-        <p2>CSS</p2><br>
-        <img src="Images/Logos/CSS.png" style="width:50px; height:55px;"><br>
-        <p2>ADOBE Suite</p2><br>
-        <img src="Images/Logos/Adobe.png" style="width:50px; height:55px; padding-bottom:7px;"><br>
-        <p2>Hardware</p2><br>
-        <img src="Images/Logos/Hardware.png" style="width:50px; height:55px;"><br>
-      </div>
-    </table></center>
-    </div>
+      <!-- Selected Projects Section -->
+      <section id="projects" aria-labelledby="projects-heading">
+        <div class="section-header">
+          <h2 id="projects-heading" class="section-title">Selected Projects</h2>
+        </div>
+        
+        <!-- Rendered via Condensed Memoized Architecture in index.js -->
+        <div class="projects-container" id="projects-list">
+          <!-- Initial Accessible Semantic Fallback (Hydrated by index.js) -->
+          <article class="project-card" id="breathe">
+            <div class="project-media">
+              <img src="Images/breathe.png" alt="Breathe App" class="project-img" loading="lazy" />
+            </div>
+            <div class="project-info">
+              <div>
+                <h3 class="project-title">Breathe App</h3>
+                <div class="project-subtitle">Respiratory Symptom &amp; Environmental Trigger Tracker</div>
+                <ul class="project-bullets">
+                  <li>Developed an <span class="kw">Android application</span> enabling users to log respiratory symptoms and correlate them with localized environmental and weather triggers over time.</li>
+                  <li>Implemented native full-stack architecture using Node.js for backend services, <span class="kw">Firebase dynamic authentication</span> and data persistence, and Expo for iterative test automation.</li>
+                  <li>Published and actively maintained on the <span class="kw">Google Play Store</span> with responsive user analytics.</li>
+                </ul>
+              </div>
+              <div class="project-actions">
+                <a href="https://play.google.com/store/apps/details?id=com.krishna.breathe&pcampaignid=web_share" target="_blank" rel="noopener noreferrer" class="btn-sharp">Google Play ↗</a>
+                <a href="https://github.com/kri-dur/breathe" target="_blank" rel="noopener noreferrer" class="btn-sharp btn-secondary">GitHub Code ↗</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
 
-    <!-- Resume -->
-    <div class="container">
-      <p3>My Resume</p3>
-      <embed id = "resume" src = "Resume.pdf" type = "application/pdf"/>
-    </div>
+      <!-- Technical Skills Section -->
+      <section id="skills" aria-labelledby="skills-heading">
+        <div class="section-header">
+          <h2 id="skills-heading" class="section-title">Technical Skills</h2>
+          <span class="section-meta">Languages &amp; Frameworks &amp; Skills</span>
+        </div>
+        <div class="skills-grid" id="skills-grid">
+          <!-- Dynamically populated via index.js with memoized templates -->
+        </div>
+      </section>
 
-    <!-- Contacts -->
-    <div class="container">
-      <p3>Contact Me</p3><br>
-      <ul><p2>
-        <li>Email: kdurgavarjhula44@gmail.com</li>
-        <li><a href="https://www.linkedin.com/in/krishna-durgavarjhula-a3b0522a1/">Linkedin</a></li>
-        <li><a href="https://www.instagram.com/hello2084748/?igsh=OGQ5ZDc2ODk2ZA%3D%3D&utm_source=qr">Instagram</a></li>
-        <li><a href="https://boxd.it/fYirP">Letterboxd</a></li>
-      </p2></ul>
-    </div>
-    
-    <!-- JS -->
-    <script src = "index.js"></script>
-   </body>
+      <!-- Experience & Milestones Section -->
+      <section id="experience" aria-labelledby="experience-heading">
+        <div class="section-header">
+          <h2 id="experience-heading" class="section-title">Timeline</h2>
+        </div>
+        <div class="timeline-stream" id="timeline-stream">
+          <!-- Dynamically populated via index.js with memoized templates -->
+        </div>
+      </section>
+
+      <!-- Resume Section -->
+      <section id="resume" aria-labelledby="resume-heading">
+        <div class="section-header">
+          <h2 id="resume-heading" class="section-title">My Resume</h2>
+        </div>
+        <div class="resume-container">
+          <div class="resume-header">
+            <div>
+              <strong>Krishna Durgavarjhula — Academic &amp; Professional Resume</strong>
+            </div>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <a href="Resume.pdf" download="Krishna_Durgavarjhula_Resume.pdf" class="btn-sharp">Download PDF ↓</a>
+              <a href="Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-sharp btn-secondary">Open Fullscreen ↗</a>
+            </div>
+          </div>
+          <iframe src="Resume.pdf" class="resume-viewer-frame" title="Resume Document"></iframe>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" aria-labelledby="contact-heading">
+        <div class="section-header">
+          <h2 id="contact-heading" class="section-title">Get In Touch</h2>
+        </div>
+        <div class="contact-grid">
+          <a href="mailto:kdurgavarjhula44@gmail.com" class="contact-card">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">kdurgavarjhula44@gmail.com</span>
+          </a>
+          <a href="https://www.linkedin.com/in/krishna-durgavarjhula-a3b0522a1/" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <span class="contact-label">LinkedIn</span>
+            <span class="contact-value">krishna-durgavarjhula</span>
+          </a>
+          <a href="https://github.com/kri-dur" target="_blank" rel="noopener noreferrer" class="contact-card">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">github.com/kri-dur</span>
+          </a>
+        </div>
+      </section>
+      
+    </main>
+
+    <!-- Clean, Sharp Footer -->
+    <footer>
+      <div class="footer-inner">
+        <div>&copy; 2023 Krishna Durgavarjhula.</div>
+      </div>
+    </footer>
+
+    <!-- Portfolio Engine -->
+    <script src="index.js"></script>
+  </body>
 </html>
