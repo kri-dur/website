@@ -61,7 +61,7 @@
       id: "breathe",
       title: "Breathe App",
       subtitle: "Respiratory Symptom & Environmental Trigger Tracker",
-      image: "Images/Screenshot 2026-11-08 at 5.57.20 PM.png",
+      image: "Images/breathe-image.png",
       bullets: [
         "Developed an <span class=\"kw\">Android application</span> enabling users to log respiratory symptoms and correlate them with localized environmental and weather triggers over time.",
         "Implemented native full-stack architecture using Node.js for backend services, <span class=\"kw\">Firebase dynamic authentication</span> and data persistence, and Expo for iterative test automation.",
@@ -76,7 +76,7 @@
       id: "roar",
       title: "UC Berkeley's Robot Open Autonomous Racing(ROAR) Academy",
       subtitle: "Autonomous Racing Simulations",
-      image: "Images/Screenshot 2026-11-08 at 6.08.06 PM.png",
+      image: "Images/roar.png",
       bullets: [
         "Selected for ROAR, where students learn from faculty about <span class=\"kw\">autonomous driving</span> concepts.",
         "Programmed machine learning simulations in Python, and related libraries/frameworks like <span class=\"kw\">NumPy, Keras, and Tensorflow</span>, for autonomous driving algorithms.",
@@ -88,11 +88,11 @@
     },
     {
       id: "cane",
-      title: "Sensory-Based Smart Cane System",
+      title: "Assistive Sensory-Based Cane System",
       subtitle: "Integrated Fall & Obstacle Detection (COSITE 2025 / IEEE Published)",
-      image: "Images/IMG_6198.jpeg",
+      image: "Images/cane-image.png",
       bullets: [
-        "Co-authored and engineered an environmentally-friendly <span class=\"kw\">assistive smart-cane system</span> and accompanying mobile application to support seniors and reduce fall incidents.",
+        "Co-authored, presented, & engineered an environmentally-friendly <span class=\"kw\">assistive smart-cane system</span> and accompanying mobile application to support seniors and reduce fall incidents in a group of three students.",
         "Integrated ultrasonic terrain sensors, thermoelectric generators (TECs) harnessing palm heat for power using TEGs, Bluetooth module, haptic feedback alerts, and real-time pulse monitoring.",
         "Presented at COSITE 2025 and <span class=\"kw\">published in IEEE Xplore</span>: 'An Assistive Sensory-Based System for Integrated Fall and Obstacle Detection'.",
         "Awarded <span class=\"kw\">1st Place in category at ACSEF</span> and qualified for CSEF."
@@ -166,7 +166,7 @@
 
   const TIMELINE_DATA = [
     {
-      date: "Jul 2025 -> Present",
+      date: "Jul 2026 -> Present",
       title: "Intern - Undisclosed Stealth Startup",
       description: "..."
     },
